@@ -4,8 +4,6 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./containers/Home/Home";
 import ShopCoffee from "./containers/ShopCoffee/ShopCoffee";
 
-import "./App.scss";
-
 function App() {
   return (
     <Switch>
