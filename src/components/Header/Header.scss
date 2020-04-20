@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+
+  img {
+    height: 30px;
+    width: 30px;
+    margin-right: 12px;
+  }
+
+  .title-img {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
