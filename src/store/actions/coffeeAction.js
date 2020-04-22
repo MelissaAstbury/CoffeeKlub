@@ -1,6 +1,5 @@
 import * as actionTypes from "./actionTypes";
-
-const coffee = ["vanilla", "choco", "bannana"];
+import { coffeeData } from "../../CoffeeData";
 
 export const fetchStart = () => {
   return {
@@ -26,7 +25,7 @@ export const fetchCoffee = () => {
   return (dispatch) => {
     dispatch(fetchStart());
     setTimeout(() => {
-      dispatch(fetchCoffeeSuccess(coffee));
+      dispatch(fetchCoffeeSuccess(coffeeData));
     }, 1000);
     // dispatch(fetchCoffeeFail(error));
   };

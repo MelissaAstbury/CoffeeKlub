@@ -12,7 +12,7 @@
     .nav-item {
       width: 70%;
       display: flex;
-      margin-right: 24px;
+      // margin-right: 24px;
       background-color: rgb(163, 158, 158);
       flex-direction: column;
       align-items: flex-start;
@@ -20,6 +20,10 @@
       padding: 10px;
       border-radius: 4px;
       cursor: pointer;
+
+      &:first-child {
+        margin-right: 24px;
+      }
 
       &:hover {
         filter: brightness(110%);

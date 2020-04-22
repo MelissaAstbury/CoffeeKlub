@@ -16,20 +16,11 @@ const reducer = (state = initialState, action) => {
         coffee: state.coffee.concat(action.payload),
         loading: false,
       };
+    case actionTypes.FETCH_COFFEE_FAIL:
+      return { ...state, loading: true, error: action.error };
     default:
       return state;
   }
 };
 
 export default reducer;
-
-// case actionTypes.FETCH_COFFEE_SUCCESS:
-//       return Object.assign({}, state, {
-//         coffee: state.coffee.concat(action.payload),
-//         loading: false,
-//       });
-
-// case actionTypes.FETCH_COFFEE_FAIL:
-//   return Object.assign({}, state, {
-//     articles: state.articles.concat(action.payload),
-//   });

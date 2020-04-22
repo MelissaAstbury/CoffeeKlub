@@ -10,9 +10,11 @@
     margin-right: 12px;
   }
 
-  .title-img {
+  a {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    text-decoration: none;
+    color: #000000;
   }
 }
