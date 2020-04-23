@@ -9,9 +9,11 @@ import "./index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import coffeeReducer from "./store/reducers/coffeeReducer";
+import orderReducer from "./store/reducers/orderReducer";
 
 const rootReducer = combineReducers({
   coffee: coffeeReducer,
+  basket: orderReducer,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk));

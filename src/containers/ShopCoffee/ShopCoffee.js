@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { fetchCoffee } from "../../store/actions/coffeeAction";
@@ -8,15 +8,15 @@ import Coffee from "../../components/Coffee/Coffee";
 import "./ShopCoffee.scss";
 
 const ShopCoffee = () => {
-  const [price, setPrice] = useState(null);
-  const [taste, setTaste] = useState(null);
+  // const [price, setPrice] = useState(null);
+  // const [taste, setTaste] = useState(null);
   const dispatch = useDispatch();
   const coffeeData = useSelector((state) => state.coffee.coffeeData);
 
   useEffect(() => {
     dispatch(fetchCoffee());
-    setPrice(3);
-    setTaste("Sweet");
+    // setPrice(3);
+    // setTaste("Sweet");
   }, [dispatch]);
 
   return (

@@ -32,6 +32,11 @@ const Header = () => {
                   Accessories
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink to="/basket" exact activeClassName="active">
+                  Basket
+                </NavLink>
+              </li>
             </ul>
           </nav>
         </div>
