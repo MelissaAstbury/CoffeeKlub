@@ -1,10 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 import "./Header.scss";
 import logo from "../../assets/testing.jpg";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const basket = useSelector((state) => state.basket.basket);
   return (
     <>
       <div className="header-container">
@@ -34,7 +36,8 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <NavLink to="/basket" exact activeClassName="active">
-                  Basket
+                  Basket {basket.length > 0 && basket.length}
+                  {/* Basket {basket.length === 0 ? "" : basket.length} */}
                 </NavLink>
               </li>
             </ul>

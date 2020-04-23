@@ -24,9 +24,15 @@ export const addToBasketFail = (error) => {
 export const addToBasket = (coffeeItem) => {
   return (dispatch) => {
     dispatch(addToBasketStart());
+
     setTimeout(() => {
+      // const coffeeItem = coffeeData.filter((item) => {
+      //   return item.id === coffeeId;
+      // });
+
       dispatch(addToBasketSuccess(coffeeItem));
-    }, 1000);
+    }, 100);
+
     // dispatch(fetchCoffeeFail(error));
   };
 };
