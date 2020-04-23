@@ -14,12 +14,12 @@ export const addToBasketSuccess = (coffeeItem) => {
   };
 };
 
-export const addToBasketFail = (error) => {
-  return {
-    type: actionTypes.ADD_TO_BASKET_FAIL,
-    error: error,
-  };
-};
+// export const addToBasketFail = (error) => {
+//   return {
+//     type: actionTypes.ADD_TO_BASKET_FAIL,
+//     error: error,
+//   };
+// };
 
 export const addToBasket = (coffeeItem) => {
   return (dispatch) => {

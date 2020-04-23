@@ -8,8 +8,6 @@ import Coffee from "../../components/Coffee/Coffee";
 import "./ShopCoffee.scss";
 
 const ShopCoffee = () => {
-  // const [price, setPrice] = useState(null);
-  // const [taste, setTaste] = useState(null);
   const dispatch = useDispatch();
   const coffeeData = useSelector((state) => state.coffee.coffeeData);
 
@@ -22,12 +20,12 @@ const ShopCoffee = () => {
   return (
     <div className="coffee-displayed">
       {coffeeData
-        .filter((item) => {
-          return item;
-          // return item.price < price && item.taste === taste;
-        })
+        // .filter((item) => {
+        // return item;
+        // return item.price < price && item.taste === taste;
+        // })
         .map((item) => {
-          return <Coffee key={item.id} coffee={item} />;
+          return <Coffee key={item.id} coffee={item} button={true} />;
         })}
     </div>
   );

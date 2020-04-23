@@ -3,13 +3,13 @@ import React from "react";
 import img from "../../assets/coffee-capsule.png";
 import "./Coffee.scss";
 import { useDispatch } from "react-redux";
-import { addToBasket } from "../../store/actions/orderAction";
+import { addToBasket } from "../../store/actions/basketAction";
 
 // const addCoffeeToBasket = (id) => {
 //   addToBasket(id);
 // };
 
-const Coffee = ({ coffee }) => {
+const Coffee = ({ coffee, button }) => {
   const dispatch = useDispatch();
   const { id, name, taste, price } = coffee;
 
@@ -19,13 +19,15 @@ const Coffee = ({ coffee }) => {
       <p className="name">{name}</p>
       <p className="taste">{taste}</p>
       <p className="price">{price}</p>
-      <button
-        onClick={() => {
-          dispatch(addToBasket(coffee));
-        }}
-      >
-        Add to Order
-      </button>
+      {button === true && (
+        <button
+          onClick={() => {
+            dispatch(addToBasket(coffee));
+          }}
+        >
+          Add to Order
+        </button>
+      )}
     </div>
   );
 };

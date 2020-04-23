@@ -14,12 +14,12 @@ export const fetchCoffeeSuccess = (coffeeData) => {
   };
 };
 
-export const fetchCoffeeFail = (error) => {
-  return {
-    type: actionTypes.FETCH_COFFEE_FAIL,
-    error: error,
-  };
-};
+// export const fetchCoffeeFail = (error) => {
+//   return {
+//     type: actionTypes.FETCH_COFFEE_FAIL,
+//     error: error,
+//   };
+// };
 
 export const fetchCoffee = () => {
   return (dispatch) => {
