@@ -7,10 +7,10 @@ export const fetchStart = () => {
   };
 };
 
-export const fetchCoffeeSuccess = (coffee) => {
+export const fetchCoffeeSuccess = (coffeeData) => {
   return {
     type: actionTypes.FETCH_COFFEE_SUCCESS,
-    payload: coffee,
+    payload: coffeeData,
   };
 };
 

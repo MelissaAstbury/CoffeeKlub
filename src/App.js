@@ -4,7 +4,6 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./containers/Home/Home";
 import ShopCoffee from "./containers/ShopCoffee/ShopCoffee";
 import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
 import "./App.scss";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
   return (
     <div className="page-container">
       <Header />
-      <Navbar />
       {routes}
     </div>
   );

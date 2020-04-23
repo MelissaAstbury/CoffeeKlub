@@ -1,0 +1,20 @@
+.coffee-item {
+  background-color: white;
+  padding: 0 15px;
+  border-radius: 7px;
+  margin: 12px 22px;
+  width: 84px;
+  cursor: pointer;
+
+  .name {
+    font-size: 18px;
+  }
+
+  .taste {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+}

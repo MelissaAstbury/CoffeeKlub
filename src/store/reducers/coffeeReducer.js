@@ -1,7 +1,7 @@
 import * as actionTypes from "../actions/actionTypes";
 
 const initialState = {
-  coffee: [],
+  coffeeData: [],
   error: null,
   loading: false,
 };
@@ -13,7 +13,7 @@ const reducer = (state = initialState, action) => {
     case actionTypes.FETCH_COFFEE_SUCCESS:
       return {
         ...state,
-        coffee: state.coffee.concat(action.payload),
+        coffeeData: state.coffeeData.concat(action.payload),
         loading: false,
       };
     case actionTypes.FETCH_COFFEE_FAIL:

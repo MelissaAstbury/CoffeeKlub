@@ -1,0 +1,10 @@
+.coffee-displayed {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: gainsboro;
+  text-align: center;
+  border-radius: 7px;
+  padding: 10px;
+  flex-wrap: wrap;
+}

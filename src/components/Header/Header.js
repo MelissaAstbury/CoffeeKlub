@@ -6,15 +6,37 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    // <div className="page-container">
-    <div className="header">
-      <NavLink to="/" exact>
-        <img src={logo} alt="explaining this img" />
-        <h1>Coffee Klub.</h1>
-      </NavLink>
-      <h3>Welcome Melissa</h3>
-    </div>
-    // </div>
+    <>
+      <div className="header-container">
+        <NavLink to="/" exact>
+          <img src={logo} alt="explaining this img" />
+          <h1>Coffee Klub.</h1>
+        </NavLink>
+        <div>
+          <h4>A Coffee A Day Keeps Grumpy Away!</h4>
+        </div>
+
+        <div className="name-and-buttons">
+          <nav>
+            {/* <div className="personalised-welcome">
+              <h3>Welcome Melissa</h3>
+            </div> */}
+            <ul className="button-container">
+              <li className="nav-item">
+                <NavLink to="/shopcoffee" exact activeClassName="active">
+                  Coffee
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/accessories" exact activeClassName="active">
+                  Accessories
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </>
   );
 };
 

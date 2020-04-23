@@ -1,8 +1,10 @@
-.header {
+.header-container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  border-bottom: 2px solid black;
+  // border-bottom: 1px solid black;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0 auto 0;
 
   img {
     height: 30px;
@@ -16,5 +18,38 @@
     align-items: baseline;
     text-decoration: none;
     color: #000000;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-item {
+    width: 70%;
+    display: flex;
+    background-color: rgb(163, 158, 158);
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: 24px;
+    }
+  }
+
+  &:hover {
+    filter: brightness(110%);
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  & .active {
+    text-decoration: underline;
   }
 }
