@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { fetchCoffee } from "../../store/actions/coffeeAction";
@@ -9,7 +8,7 @@ import "./ShopCoffee.scss";
 
 const ShopCoffee = () => {
   const dispatch = useDispatch();
-  const coffeeData = useSelector((state) => state.coffee.coffeeData);
+  const coffeeData = useSelector((state) => state.coffeeReducer.coffeeData);
 
   useEffect(() => {
     dispatch(fetchCoffee());

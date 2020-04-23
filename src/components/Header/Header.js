@@ -1,12 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import "./Header.scss";
 import logo from "../../assets/testing.jpg";
-import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const basket = useSelector((state) => state.basket.basket);
+  const basket = useSelector((state) => state.basketReducer.basket);
   return (
     <>
       <div className="header-container">

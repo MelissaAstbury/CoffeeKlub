@@ -9,15 +9,22 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.FETCH_COFFEE_START:
-      return { ...state, loading: true };
+      return {
+        ...state,
+        loading: true,
+      };
     case actionTypes.FETCH_COFFEE_SUCCESS:
       return {
         ...state,
-        coffeeData: state.coffeeData.concat(action.payload),
+        coffeeData: action.coffeeData,
         loading: false,
       };
     case actionTypes.FETCH_COFFEE_FAIL:
-      return { ...state, loading: true, error: action.error };
+      return {
+        ...state,
+        loading: true,
+        error: action.error,
+      };
     default:
       return state;
   }

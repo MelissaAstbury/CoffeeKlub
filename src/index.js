@@ -12,8 +12,8 @@ import coffeeReducer from "./store/reducers/coffeeReducer";
 import basketReducer from "./store/reducers/basketReducer";
 
 const rootReducer = combineReducers({
-  coffee: coffeeReducer,
-  basket: basketReducer,
+  coffeeReducer: coffeeReducer,
+  basketReducer: basketReducer,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk));

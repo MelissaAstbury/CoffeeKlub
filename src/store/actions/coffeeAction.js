@@ -10,7 +10,7 @@ export const fetchStart = () => {
 export const fetchCoffeeSuccess = (coffeeData) => {
   return {
     type: actionTypes.FETCH_COFFEE_SUCCESS,
-    payload: coffeeData,
+    coffeeData: coffeeData,
   };
 };
 
@@ -24,9 +24,9 @@ export const fetchCoffeeSuccess = (coffeeData) => {
 export const fetchCoffee = () => {
   return (dispatch) => {
     dispatch(fetchStart());
-    setTimeout(() => {
-      dispatch(fetchCoffeeSuccess(coffeeData));
-    }, 1000);
+    // setTimeout(() => {
+    dispatch(fetchCoffeeSuccess(coffeeData));
+    // }, 100);
     // dispatch(fetchCoffeeFail(error));
   };
 };

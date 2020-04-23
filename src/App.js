@@ -7,7 +7,7 @@ import Header from "./components/Header/Header";
 import Basket from "./containers/Basket/Basket";
 import "./App.scss";
 
-function App() {
+const App = () => {
   const routes = (
     <Switch>
       <Route exact path="/" component={Home} />
@@ -22,6 +22,6 @@ function App() {
       {routes}
     </div>
   );
-}
+};
 
 export default App;
