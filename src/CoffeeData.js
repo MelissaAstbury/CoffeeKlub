@@ -5,7 +5,8 @@ export const coffeeData = [
     strength: 4,
     taste: "Sweet",
     origin: "Cambodia",
-    quanitity: 10,
+    capsules: 10,
+    quantity: 1,
     price: 2.8,
   },
   {
@@ -14,7 +15,8 @@ export const coffeeData = [
     strength: 6,
     taste: "Woody",
     origin: "Kenya",
-    quanitity: 10,
+    capsules: 10,
+    quantity: 1,
     price: 3.2,
   },
   {
@@ -23,7 +25,8 @@ export const coffeeData = [
     strength: 9,
     taste: "Spicy",
     origin: "Mexico",
-    quanitity: 5,
+    capsules: 5,
+    quantity: 1,
     price: 4.3,
   },
   {
@@ -32,7 +35,8 @@ export const coffeeData = [
     strength: 6,
     taste: "Floral",
     origin: "America",
-    quanitity: 10,
+    capsules: 10,
+    quantity: 1,
     price: 2.9,
   },
   {
@@ -41,7 +45,8 @@ export const coffeeData = [
     strength: 3,
     taste: "Sweet",
     origin: "Cambodia",
-    quanitity: 10,
+    capsules: 10,
+    quantity: 1,
     price: 2.2,
   },
   {
@@ -50,7 +55,8 @@ export const coffeeData = [
     strength: 3,
     taste: "Sweet",
     origin: "America",
-    quanitity: 10,
+    capsules: 10,
+    quantity: 1,
     price: 2.8,
   },
   {
@@ -59,7 +65,8 @@ export const coffeeData = [
     strength: 8,
     taste: "Spicy",
     origin: "Italy",
-    quanitity: 5,
+    capsules: 5,
+    quantity: 1,
     price: 5.1,
   },
   {
@@ -68,7 +75,8 @@ export const coffeeData = [
     strength: 10,
     taste: "Woody",
     origin: "India",
-    quanitity: 5,
+    capsules: 5,
+    quantity: 1,
     price: 4.8,
   },
   {
@@ -77,7 +85,8 @@ export const coffeeData = [
     strength: 5,
     taste: "Floral",
     origin: "India",
-    quanitity: 10,
+    capsules: 10,
+    quantity: 1,
     price: 3.1,
   },
   {
@@ -86,7 +95,8 @@ export const coffeeData = [
     strength: 7,
     taste: "Spicy",
     origin: "Italy",
-    quanitity: 10,
+    capsules: 10,
+    quantity: 1,
     price: 2.8,
   },
 ];

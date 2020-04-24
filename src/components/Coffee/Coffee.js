@@ -3,7 +3,10 @@ import React from "react";
 import img from "../../assets/coffee-capsule.png";
 import "./Coffee.scss";
 import { useDispatch } from "react-redux";
-import { addToBasket } from "../../store/actions/basketAction";
+import {
+  addToBasket,
+  removeItemFromBasket,
+} from "../../store/actions/basketAction";
 
 // const addCoffeeToBasket = (id) => {
 //   addToBasket(id);
@@ -11,7 +14,7 @@ import { addToBasket } from "../../store/actions/basketAction";
 
 const Coffee = ({ coffee, button }) => {
   const dispatch = useDispatch();
-  const { id, name, taste, price } = coffee;
+  const { id, name, taste, price, quantity } = coffee;
 
   return (
     <div key={id} className="coffee-item">
@@ -19,7 +22,8 @@ const Coffee = ({ coffee, button }) => {
       <p className="name">{name}</p>
       <p className="taste">{taste}</p>
       <p className="price">{price}</p>
-      {button === true && (
+      <p className="price">{quantity}</p>
+      {button === true ? (
         <button
           onClick={() => {
             dispatch(addToBasket(coffee));
@@ -27,6 +31,24 @@ const Coffee = ({ coffee, button }) => {
         >
           Add to Order
         </button>
+      ) : (
+        <>
+          <button
+            onClick={() => {
+              dispatch(addToBasket(coffee));
+            }}
+          >
+            Add More
+          </button>
+
+          <button
+            onClick={() => {
+              dispatch(removeItemFromBasket(coffee));
+            }}
+          >
+            Remove
+          </button>
+        </>
       )}
     </div>
   );

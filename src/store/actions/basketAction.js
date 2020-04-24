@@ -12,6 +12,19 @@ export const addToBasketSuccess = (coffeeItem) => {
     coffeeItem: coffeeItem,
   };
 };
+
+export const removeItemFromBasket = (coffeeItem) => {
+  return (dispatch) => {
+    dispatch(removeItemFromBasketSuccess(coffeeItem));
+  };
+};
+
+export const removeItemFromBasketSuccess = (coffeeItem) => {
+  return {
+    type: actionTypes.REMOVE_FROM_BASKET_SUCCESS,
+    coffeeItem: coffeeItem,
+  };
+};
 // dispatch(addToBasketStart());
 // dispatch(fetchCoffeeFail(error));
 
