@@ -14,24 +14,18 @@ const Header = () => {
           <img src={logo} alt="explaining this img" />
           <h1>Coffee Klub.</h1>
         </NavLink>
-        <div>
-          <h4>A Coffee A Day Keeps Grumpy Away!</h4>
-        </div>
 
         <div className="name-and-buttons">
           <nav>
-            {/* <div className="personalised-welcome">
-              <h3>Welcome Melissa</h3>
-            </div> */}
             <ul className="button-container">
               <li className="nav-item">
-                <NavLink to="/shopcoffee" exact activeClassName="active">
-                  Coffee
+                <NavLink to="/" exact activeClassName="active">
+                  Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/accessories" exact activeClassName="active">
-                  Accessories
+                <NavLink to="/shopcoffee" exact activeClassName="active">
+                  Coffee
                 </NavLink>
               </li>
               <li className="nav-item">

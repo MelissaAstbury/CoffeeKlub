@@ -14,22 +14,21 @@ import {
 
 const Coffee = ({ coffee, button }) => {
   const dispatch = useDispatch();
-  const { id, name, taste, price, quantity } = coffee;
+  const { id, name, price } = coffee;
 
   return (
     <div key={id} className="coffee-item">
       <img src={img} alt="Coffee Capsule" />
       <p className="name">{name}</p>
-      <p className="taste">{taste}</p>
-      <p className="price">{price}</p>
-      <p className="price">{quantity}</p>
+      <p className="price">£{price}</p>
       {button === true ? (
         <button
+          className="add-coffee"
           onClick={() => {
             dispatch(addToBasket(coffee));
           }}
         >
-          Add to Order
+          Add
         </button>
       ) : (
         <>

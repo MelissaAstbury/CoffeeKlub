@@ -24,4 +24,19 @@
   .price {
     font-size: 12px;
   }
+
+  .add-coffee {
+    background-color: #3dc46e;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 6px;
+    width: 80px;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(110%);
+      // background-color: green;
+    }
+  }
 }

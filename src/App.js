@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import Home from "./containers/Home/Home";
 import ShopCoffee from "./containers/ShopCoffee/ShopCoffee";
@@ -13,6 +13,7 @@ const App = () => {
       <Route exact path="/" component={Home} />
       <Route exact path="/shopcoffee" component={ShopCoffee} />
       <Route exact path="/basket" component={Basket} />
+      <Redirect to="/" />
     </Switch>
   );
 
